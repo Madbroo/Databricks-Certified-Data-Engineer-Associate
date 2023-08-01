@@ -82,7 +82,3 @@ spark.udf.register("sql_vectorized_udf", vectorized_udf)
 # MAGIC %sql
 # MAGIC SELECT price, sql_vectorized_udf(price, 50) AS price_after_discount
 # MAGIC FROM books
-
-# COMMAND ----------
-
-

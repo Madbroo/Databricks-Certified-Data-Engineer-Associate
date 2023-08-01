@@ -7,14 +7,12 @@ datasets_path = spark.conf.get("datasets_path")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC 
-# MAGIC 
-# MAGIC 
+# MAGIC
+# MAGIC
+# MAGIC
 # MAGIC ## Bronze Layer Tables
 
 # COMMAND ----------
-
-
 
 @dlt.table(
     name = "books_bronze", 
@@ -31,9 +29,9 @@ def ingest_books_cdc():
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC 
-# MAGIC 
-# MAGIC 
+# MAGIC
+# MAGIC
+# MAGIC
 # MAGIC ## Silver Layer Tables
 
 # COMMAND ----------
@@ -52,8 +50,8 @@ dlt.apply_changes(
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC 
-# MAGIC 
+# MAGIC
+# MAGIC
 # MAGIC ## Gold Layer Tables
 
 # COMMAND ----------
